@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <div id='app'>
+        <div id="content">
+            <div id="content-header">
+                <h1>Todo List</h1>
+            </div>
+            <div style="text-align:center;">
+                <todo-input id="title" @click='addTodo' v-bind:disabled='inputDisabled' />
+            </div>
+            <div id="counter">
+                <todo-counter v-bind:count='todos.length'></todo-counter>
+            </div>
+            <div id="todos-pane">
+                <ul id="todos">
+                    <todo-item v-for='(todo, i) in todos' v-bind:todo='todo' v-bind:i='i' @remove='removeTodo' />
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="public/bundle.js"></script>
+</body>
+
+</html>

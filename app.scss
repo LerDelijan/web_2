@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  background-color: white;
+}
+
+#content-header {
+  text-align: center;
+  padding: 1px 0 1px;
+  font-family: Montserrat;
+  font-size: 25px;
+  box-shadow: 0 0 8px;
+}
+
+#todos-pane {
+  width: 50%;
+  overflow: auto;
+  position: relative;
+  text-align: left;
+  padding-left: 485px;
+}
+
+#counter {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  font-family: Lato; 
+}
+
+#todos li {
+  list-style-type: none;
+  font-size: 16px;
+  width: 500px;
+  overflow: auto;
+  padding-left: 2px;
+  font-family: Lato;
+  font-size: 16px;
+  margin: 0px;
+}
+
+#todos li span.done {
+  color: rgb(106, 216, 63);
+}
+
+#title {
+  display: inline-block;
+  width: 500px;
+  font-size: 16px;
+  font-family: Lato; 
+  margin: 10px;
+  padding: 10px 15px;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.donebtn {
+  font-size: 16px;
+  font-family: Lato; 
+  margin-right: 20px;
+  border: 0;
+  padding: 6px;
+  background-color: white;
+  &:focus {
+    outline: 0;
+  }
+}
+.undonebtn {
+  font-size: 16px;
+  font-family: Lato; 
+  margin-right: 20px;
+  border: 0;
+  padding: 6px;
+  background-color: rgb(207, 84, 84);
+  color: white;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.time {
+  display: grid;
+  color: grey;
+  text-align: right;
+}
+
+.donetime {
+  display: grid;
+  color: rgb(106, 216, 63);
+  text-align: right;
+}
